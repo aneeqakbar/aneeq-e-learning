@@ -8,7 +8,7 @@ def menu_links(request):
     footcategories = Category.objects.filter(parent=None)[:4]
     catg_parent = Category.objects.filter(parent=None)
     #latest_catg = Category.objects.order_by("-id")[3:10]
-    return dict(links=links, footcategories=footcategories, catg_parent=catg_parent, latest_catg=latest_catg)
+    return dict(footcategories=footcategories, catg_parent=catg_parent)
 
 def home_page(request):
     testimonials = Testimonial.objects.all()[:3]
