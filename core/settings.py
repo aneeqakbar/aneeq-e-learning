@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-bqy+is65o59_r$8(f+0l&n!186gm=4+tsi*2av-!6r&fhpx(g4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*","www.manyaka.net"]
 
 
 # Application definition
